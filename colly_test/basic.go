@@ -10,7 +10,9 @@ func main() {
 	// Instantiate default collector
 	c := colly.NewCollector(
 		// Visit only domains: hackerspaces.org, wiki.hackerspaces.org
-		colly.AllowedDomains("hackerspaces.org", "wiki.hackerspaces.org"),
+		//colly.AllowedDomains("hackerspaces.org", "wiki.hackerspaces.org"),
+		colly.AllowedDomains("finance.sina.com.cn", "wiki.hackerspaces.org"),
+
 	)
 
 	// On every a element which has href attribute call callback
