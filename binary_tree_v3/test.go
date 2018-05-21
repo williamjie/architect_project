@@ -34,3 +34,14 @@ func main() {
     result := tree1.Find(6)
     fmt.Printf("结点6的父节点数据:%v\t结点6的右孩子节点数据:%v\t节点6的做孩子节点:%v\n", result.GetParent().GetData(),result.GetRChild().GetData(),result.GetLChild().GetData())
 }
+
+
+//         1
+ //      /   \
+ //     /     \
+ //    2       5
+ //     \    / \
+ //      3   6   7
+ //      /    \   \
+ //      4     9   8
+
