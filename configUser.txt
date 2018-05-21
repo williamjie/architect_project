@@ -1,4 +1,5 @@
 
+
 取消git全局设置
 学艺不精的我们都是跟着网上的教程进行的git设置，默认都是全局设置，比如：
 git config --global user.name "your_name"
