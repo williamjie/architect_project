@@ -1,0 +1,2 @@
+root@jacky-OptiPlex-7010:~/zhujie/architect_project# git config user.name "jiez216@163.com"
+root@jacky-OptiPlex-7010:~/zhujie/architect_project# git config user.email "jiez216@163.com"
