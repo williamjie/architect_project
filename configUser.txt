@@ -1,2 +1,20 @@
+
+取消git全局设置
+学艺不精的我们都是跟着网上的教程进行的git设置，默认都是全局设置，比如：
+git config --global user.name "your_name"
+
+git config --global user.email  "your_email"
+一般情况下，参与的项目都是同一个邮箱用户名是没啥问题的。但是碰到我这种情况，又不想换掉其中一个项目的用户名（我也没有这个决定权）。我就需要针对不同的项目设置不同的用户名邮箱。
+cd ~/you project   #进入项目文件夹
+git init           #初始化项目（如果已经是git目录了则不需要）
+git config user.name "your_name"   #重新设置用户名和邮箱
+git config user.email "your_email"
+说白了，也就是进入到你的git项目相对根目录下，然后执行git config设置记录。
+这时候我们打开项目中的.git文件夹，查看config文件会发现多了两行
+
+在下一次提交的时候就优先是用项目文件中的git配置信息了。如果有必要可以执行取消全局设置的命令
+git config --global --unset user.name
+git config --global --unset user.email
+
 root@jacky-OptiPlex-7010:~/zhujie/architect_project# git config user.name "jiez216@163.com"
 root@jacky-OptiPlex-7010:~/zhujie/architect_project# git config user.email "jiez216@163.com"
